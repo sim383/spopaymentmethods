@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FavePay</title>
+  <style>
+    :root {
+      --rose-gold: #b76e79;
+      --rose-gold-light: #f4d1cd;
+      --white: #ffffff;
+      --text-color: #4a2c2a;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--white);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(45deg, var(--rose-gold), var(--rose-gold-light));
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(183, 110, 121, 0.4);
+    }
+    nav {
+      background-color: var(--rose-gold);
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.75rem 0;
+      box-shadow: 0 2px 6px rgba(183, 110, 121, 0.7);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: var(--rose-gold-light);
+      color: var(--rose-gold);
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      background-color: var(--white);
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(183, 110, 121, 0.2);
+    }
+    h1, h2 {
+      color: var(--rose-gold);
+      margin-top: 0;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #5a3a3a;
+    }
+    ol.steps {
+      background-color: #f9e6e8;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      color: #80363a;
+      font-weight: 600;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+    ol.steps li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--rose-gold-light);
+      color: var(--rose-gold);
+      font-weight: 600;
+      margin-top: 3rem;
+      border-radius: 0 0 12px 12px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+        margin: 1rem;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      ol.steps {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ezlink.html">EZ-Link</a>
+    <a href="cards.html">Credit / Debit Cards</a>
+    <a href="wallets.html">Mobile Wallets</a>
+    <a href="paynow.html">PayNow</a>
+    <a href="favepay.html">FavePay</a>
+  </nav>
+
+  <header>
+    <h1>FavePay</h1>
+  </header>
+
+  <div class="container">
+    <p>
+      FavePay is a QR-based mobile payment method in Singapore that lets you pay at participating restaurants and stores while earning cashback rewards. It links to your credit or debit card and processes payments through the Fave app.
+    </p>
+    <p>
+      It’s popular with younger users for its reward system and is supported at many small and medium businesses across Singapore.
+    </p>
+
+    <img src="./images/FaveDBSSingtel-FI.jpg">
+    <br>
+    <br>
+
+    <h2>How to Use FavePay</h2>
+    <ol class="steps">
+      <li><strong>Download the Fave app:</strong> Install the Fave app on your mobile device from the App Store or Google Play.</li>
+      <br>
+      <li><strong>Set Up Your Account:</strong> Sign up and add your preferred credit or debit card as a payment method.</li>
+      <br>
+      <li><strong>Select FavePay:</strong> At a participating merchant, tap on “FavePay” within the app.</li>
+      <br>
+      <li><strong>Scan QR Code:</strong> Use the app to scan the merchant’s QR code displayed at the counter.</li>
+      <br>
+      <li><strong>Pay and Earn Cashback:</strong> Enter the amount, pay, and enjoy instant cashback credited to your Fave account for future use.</li>
+    </ol>
+  </div>
+
+  <footer>
+    &copy; 2025 Singapore Payment Methods.
+  </footer>
+
+</body>
+</html>

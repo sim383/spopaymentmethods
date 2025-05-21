@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <style>
+    :root {
+      --rose-gold: #b76e79;
+      --rose-gold-light: #f4d1cd;
+      --white: #ffffff;
+      --text-color: #4a2c2a;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--white);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(45deg, var(--rose-gold), var(--rose-gold-light));
+      color: var(--white);
+      padding: 2rem 1rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(183, 110, 121, 0.4);
+      margin-top: 60px; /* offset for fixed nav */
+    }
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+      letter-spacing: 1.2px;
+    }
+    nav {
+      background-color: var(--rose-gold);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.75rem 0;
+      box-shadow: 0 2px 6px rgba(183, 110, 121, 0.7);
+    }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: var(--rose-gold-light);
+      color: var(--rose-gold);
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      background-color: var(--white);
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(183, 110, 121, 0.2);
+    }
+    .method {
+      border-bottom: 1px solid var(--rose-gold-light);
+      padding: 1rem 0;
+    }
+    .method:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      color: var(--rose-gold);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    p {
+      margin-top: 0;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #5a3a3a;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--rose-gold-light);
+      color: var(--rose-gold);
+      font-weight: 600;
+      margin-top: 3rem;
+      border-radius: 0 0 12px 12px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+        margin: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ezlink.html">EZ-Link</a>
+    <a href="cards.html">Credit/Debit Cards</a>
+    <a href="wallets.html">Mobile Wallets</a>
+    <a href="paynow.html">PayNow</a>
+    <a href="favepay.html">FavePay</a>
+  </nav>
+
+  <header>
+    <h1>Singapore Payment Methods</h1>
+    <br>
+    <p>Explore how people pay in Singapore for transport, shopping, etc.</p>
+  </header>
+
+  <div class="container">
+    <section id="ezlink" class="method">
+      <h2>EZ-Link</h2>
+      <p>Contactless stored-value cards used mainly for public transport fares and small retail payments.</p>
+    </section>
+
+    <section id="cards" class="method">
+      <h2>Credit / Debit Cards (Visa, Mastercard, American Express)</h2>
+      <p>Widely accepted contactless payment cards used for retail and public transport via SimplyGo.</p>
+    </section>
+
+    <section id="wallets" class="method">
+      <h2>Mobile Wallets</h2>
+      <p>Apple Pay, Google Pay, Samsung Pay use NFC technology linked to your bank cards for easy contactless payments.</p>
+    </section>
+
+    <section id="paynow" class="method">
+      <h2>PayNow</h2>
+      <p>Real-time funds transfer using phone numbers, NRIC, or QR codes. Popular for peer-to-peer and retail payments.</p>
+    </section>
+
+
+    <section id="favepay" class="method">
+      <h2>FavePay</h2>
+      <p>A widely accepted QR payment system in restaurants, bakeries and retail shops.</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Singapore Payment Methods.
+
+</body>
+</html>

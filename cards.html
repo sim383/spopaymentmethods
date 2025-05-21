@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Credit/Debit Cards</title>
+  <style>
+    :root {
+      --rose-gold: #b76e79;
+      --rose-gold-light: #f4d1cd;
+      --white: #ffffff;
+      --text-color: #4a2c2a;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--white);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(45deg, var(--rose-gold), var(--rose-gold-light));
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(183, 110, 121, 0.4);
+    }
+    nav {
+      background-color: var(--rose-gold);
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.75rem 0;
+      box-shadow: 0 2px 6px rgba(183, 110, 121, 0.7);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: var(--rose-gold-light);
+      color: var(--rose-gold);
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      background-color: var(--white);
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(183, 110, 121, 0.2);
+    }
+    h1, h2 {
+      color: var(--rose-gold);
+      margin-top: 0;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #5a3a3a;
+    }
+    ol.steps {
+      background-color: #f9e6e8;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      color: #80363a;
+      font-weight: 600;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+    ol.steps li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--rose-gold-light);
+      color: var(--rose-gold);
+      font-weight: 600;
+      margin-top: 3rem;
+      border-radius: 0 0 12px 12px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+        margin: 1rem;
+      }
+      nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      ol.steps {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ezlink.html">EZ-Link</a>
+    <a href="cards.html">Credit/Debit Cards</a>
+    <a href="wallets.html">Mobile Wallets</a>
+    <a href="paynow.html">PayNow</a>
+    <a href="favepay.html">FavePay</a>
+  </nav>
+
+  <header>
+    <h1>Credit / Debit Cards (Visa, Mastercard, Amex)</h1>
+  </header>
+
+  <div class="container">
+    <p>
+      Credit and debit cards such as Visa, Mastercard, and American Express are widely accepted in Singapore at most retail stores, restaurants, and service providers. 
+      Many payment terminals now support contactless payments, making transactions fast and convenient.
+    </p>
+    <p>
+      You can also link your credit or debit card to SimplyGo to pay for public transport fares directly without needing a separate card.
+    </p>
+
+    <img src="./images/contactless.jpg">
+    <br>
+    <br>
+
+    <h2>How to Use Your Card for Payments</h2>
+    <ol class="steps">
+      <li><strong>Check the payment terminal:</strong> Ensure it supports contactless payments or insert/swipe your card if needed.</li>
+      <br>
+      <li><strong>Tap or insert your card:</strong> For contactless, simply tap your card near the terminal's NFC reader. Otherwise, insert your card into the chip reader or swipe.</li>
+      <br>
+      <li><strong>Confirm the amount:</strong> Check the transaction amount displayed on the terminal screen.</li>
+      <br>
+      <li><strong>Authorize the payment:</strong> For contactless payments under a certain limit, no PIN may be needed. For higher amounts, enter your PIN or sign as required.</li>
+      <br>
+      <li><strong>Wait for confirmation:</strong> The terminal will show a confirmation message and you may hear a beep or see a green light indicating payment success.</li>
+    </ol>
+  </div>
+
+  <footer>
+    &copy; 2025 Singapore Payment Methods.
+  </footer>
+
+</body>
+</html>
